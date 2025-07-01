@@ -10,6 +10,7 @@ function App() {
     <>
       <h1>asd</h1>
       <h1>privet</h1>
+      salom
     </>
   )
 }
