@@ -55,7 +55,6 @@ const Kontakt = () => {
           </div>
           <div className="custom-next absolute right-5 top-1/2 transform -translate-y-1/2 z-10 bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-full shadow-lg cursor-pointer">
             <FaChevronRight size={20} />
-            
           </div>
         </Swiper>
       </div>
