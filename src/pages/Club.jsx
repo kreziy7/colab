@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
+// import Header from "./Header";
+// import Footer from "./Footer";
 
-export default function TrueGymForm() {
+function TrueGymForm() {
   return (
     <div>
       <Header />
@@ -23,7 +23,6 @@ export default function TrueGymForm() {
           </h2>
 
           <form className="flex flex-col space-y-4 text-sm">
-            {/* Имя */}
             <div>
               <label className="block font-bold mb-1">ВАШЕ ИМЯ</label>
               <input
@@ -33,7 +32,6 @@ export default function TrueGymForm() {
               />
             </div>
 
-            {/* Email */}
             <div>
               <label className="block font-bold mb-1">E-MAIL:</label>
               <input
@@ -43,7 +41,6 @@ export default function TrueGymForm() {
               />
             </div>
 
-            {/* Телефон */}
             <div>
               <label className="block font-bold mb-1">НОМЕР ТЕЛЕФОНА</label>
               <input
@@ -53,7 +50,6 @@ export default function TrueGymForm() {
               />
             </div>
 
-            {/* Город */}
             <div>
               <label className="block font-bold mb-1">ГОРОД</label>
               <input
@@ -63,7 +59,6 @@ export default function TrueGymForm() {
               />
             </div>
 
-            {/* Хотите открыть */}
             <div>
               <label className="block font-bold mb-1">ХОТИТЕ ОТКРЫТЬ:</label>
               <div className="space-y-1">
@@ -75,7 +70,6 @@ export default function TrueGymForm() {
               </div>
             </div>
 
-            {/* Срок запуска */}
             <div>
               <label className="block font-bold mb-1">ПЛАНИРУЕМЫЙ СРОК ЗАПУСКА ПРОЕКТА:</label>
               <div className="space-y-1">
@@ -86,7 +80,6 @@ export default function TrueGymForm() {
               </div>
             </div>
 
-            {/* Какие услуги */}
             <div>
               <label className="block font-bold mb-1">КАКИЕ УСЛУГИ ВАС ИНТЕРЕСУЮТ:</label>
               <div className="space-y-1">
@@ -97,7 +90,6 @@ export default function TrueGymForm() {
               </div>
             </div>
 
-            {/* Upload */}
             <div>
               <label className="block font-bold mb-1">ЗАГРУЗИТЬ ПЛАН ПОМЕЩЕНИЯ</label>
               <input
@@ -111,7 +103,6 @@ export default function TrueGymForm() {
               />
             </div>
 
-            {/* Комментарий */}
             <div>
               <label className="block font-bold mb-1">КОММЕНТАРИЙ</label>
               <textarea
@@ -120,7 +111,6 @@ export default function TrueGymForm() {
               ></textarea>
             </div>
 
-            {/* Submit */}
             <button
               type="submit"
               className="bg-[#00B0F0] hover:bg-[#0090d0] text-white font-semibold w-full py-3 rounded mt-4"
@@ -134,3 +124,5 @@ export default function TrueGymForm() {
     </div>
   );
 }
+
+export default TrueGymForm;
