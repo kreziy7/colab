@@ -1,7 +1,6 @@
-
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import './index.css';
+import './index.css'; // Make sure to import your styles here
 import App from './App.jsx';
 
 import {
@@ -13,6 +12,7 @@ import About from './pages/About.jsx';
 import Advantages from './pages/Advantages.jsx';
 import Club from './pages/Club.jsx';
 import Home from './pages/Home.jsx';
+import NotFound from './pages/About.jsx';  // Optional: for 404 handling
 
 const router = createBrowserRouter([
   {
@@ -34,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: '/club',
         element: <Club />,
+      },
+      {
+        path: '*',  // Catch-all route for unmatched paths
+        element: <NotFound />,  // Optional 404 page
       },
     ],
   },
